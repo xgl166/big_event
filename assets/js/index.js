@@ -1,14 +1,14 @@
 getUserInfo()
 function getUserInfo() {
     $.ajax({
-        method: 'get',
+        method: "get",
         url: '/my/userinfo',
         success: function (res) {
-            // console.log(res.data);
+            console.log(res.data);
+            // res.data
             if (res.status !== 0) {
                 return layer.msg('认证信息失败')
             }
-            console.log(res.data);
             // 如果成功，渲染用户头像
             renderAvatar(res.data)
         },
@@ -16,7 +16,7 @@ function getUserInfo() {
 }
 function renderAvatar(data) {
     var name = data.nickname || data.username
-    $('#welcome').html('欢迎&nbsp;nbsp;' + name)
+    $('#welcome').html('欢迎&nbsp;&nbsp;' + name)
     if (data.user_pic !== null) {
         $('.layui-nav-img').prop('src', data.user_pic).show()
         $('.text_avatar').hide()

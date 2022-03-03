@@ -10,8 +10,11 @@ $.ajaxPrefilter(function (options) {
     }
     // 权限管理的优化
     options.complete = function (res) {
+console.log(res.responseJSON.status);
+console.log(res.responseJSON.message);
         if (res.responseJSON.status === 1 && res.responseJSON.message === '身份认证失败！') {
-            location.href = '/login.html'
+            // location.href = '/login.html'
+            console.log(1);
         }
     }
 })
