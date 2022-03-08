@@ -43,7 +43,7 @@
                 </li>
             </ul>
         </div>
-<!-- 下方区域 -->
+        <!-- 下方区域 -->
         <div class="layui-side layui-bg-black">
             <div class="layui-side-scroll">
                 <div href="javascript:;" class="user_info">
@@ -54,19 +54,19 @@
                 </div>
                 <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
                 <ul class="layui-nav layui-nav-tree" lay-shrink="all" lay-filter="test">
-                    
+
                     <li class="layui-nav-item layui-this">
-                        <a href="javascript:;">
-                            <span class="iconfont icon-home"></span> 
+                        <a href="/home/dashboard.html" target="fm">
+                            <span class="iconfont icon-home"></span>
                             首页
                         </a>
                     </li>
                     <li class="layui-nav-item">
                         <a class="" href="javascript:;">
                             <span class="iconfont icon-16"></span>
-                             文章管理</a>
+                            文章管理</a>
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>文章类别</a></dd>
+                            <dd><a href="/article/art_cate.html" target="fm"><i class="layui-icon layui-icon-app"></i>文章类别</a></dd>
                             <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>文章列表</a></dd>
                             <dd><a href="javascript:;"><i class="layui-icon layui-icon-app"></i>发布文章</a></dd>
                         </dl>
@@ -78,10 +78,12 @@
                         </a>
                         <dl class="layui-nav-child">
                             <dd><a href="/user/user_info.html" target="fm">
-                                <i class="layui-icon layui-icon-app"></i>
-                                基本资料</a></dd>
-                            <dd><a href="/user/user_avatar.html" target="fm"><i class="layui-icon layui-icon-app"></i>更换头像</a></dd>
-                            <dd><a href="/user/user_pwd.html" target="fm"><i class="layui-icon layui-icon-app"></i>重置密码</a></dd>
+                                    <i class="layui-icon layui-icon-app"></i>
+                                    基本资料</a></dd>
+                            <dd><a href="/user/user_avatar.html" target="fm"><i
+                                        class="layui-icon layui-icon-app"></i>更换头像</a></dd>
+                            <dd><a href="/user/user_pwd.html" target="fm"><i
+                                        class="layui-icon layui-icon-app"></i>重置密码</a></dd>
                         </dl>
                     </li>
                 </ul>
@@ -107,4 +109,5 @@
 <script src="/assets/lib/layui/layui.all.js"></script>
 <!-- 引入index.js文件 -->
 <script src="/assets/js/index.js"></script>
+
 </html>
